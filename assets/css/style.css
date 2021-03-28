@@ -210,6 +210,7 @@ header {
   width: 80%;
   margin-bottom: 2rem;
 }
+
 .btn {
   background: #8e2de2; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -232,10 +233,72 @@ header {
 .card-info button {
   width: 8rem;
   height: 2.5rem;
+  cursor: pointer;
 }
 
 .card:hover .card-info {
   bottom: 2rem;
   opacity: 1;
   visibility: visible;
+}
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: var(--font-secondary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a {
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.5rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+.social-list ul li a:hover {
+  color: #fff;
+  transition: 0.2s;
+}
+
+#link-topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
 }
